@@ -1,0 +1,132 @@
+/*body*/      
+body {
+    margin: 0;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    /* Multiple colors gradient */
+    background: linear-gradient(135deg, #ff6a88, #b73386, #42f5e6, #f5e663, #ff9a9e);
+    background-size: 600% 600%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Button Group */
+.btn-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left section */
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f5e663; /* fixed color */
+    padding: 40px;
+    text-align: center;
+}
+
+.left img {
+    width: 350px;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+.left p {
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Right section */
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form Box */
+.box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 20px;
+    width: 75%;
+    color: white;
+    box-shadow: 0px 15px 35px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Inputs */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.9);
+    font-size: 14px;
+    transition: 0.3s ease;
+    color: #333;
+}
+
+input::placeholder {
+    color: #777;
+}
+
+input:focus, select:focus {
+    background: #ffffff;
+    color: #333;
+    box-shadow: 0 0 8px rgba(255,255,255,0.6);
+}
+
+/* Buttons */
+button {
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Links */
+a {
+    color: #ffe082;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
